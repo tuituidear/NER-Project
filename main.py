@@ -11,3 +11,8 @@ if st.button("Analyze"):
     st.write("Entities recognized:")
     for entity in entities:
         st.write(f"{entity['entity']} - {entity['result']} (Score: {entity['confidence']:.2f})")
+
+import pandas as pd
+
+df = pd.DataFrame({"data": [0, 1, 2]})
+st.dataframe(df)
